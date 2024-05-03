@@ -84,35 +84,48 @@
             </div>
         </header>
         <main>
-            <div>
-                <section>
-                    <div>
+            <div class="flex items-center justify-center p-12">
+                <section class="mx-auto w-full max-w-[550px] shadow-inner">
+                    <div class="mb-5">
                         <form action="https://formbold.com/s/FORM_ID"
                               method="POST">
-                            <label for="username">Nom de famille :</label>
+                            <label for="username"
+                                   class="mb-3 block text-base font-medium text-[#07074D]">Nom
+                                de famille :</label>
                             <input type="text" name="username"
                                    placeholder="Nom de famille"
                                    required><br><br>
-                            <label for="Prénom">Prénom :</label>
+                            <label for="Prénom"
+                                   class="mb-3 block text-base font-medium text-[#07074D]">Prénom
+                                :</label>
                             <input type="text" name="Prénom"
                                    placeholder="Premier prénom uniquement"
                                    required><br><br>
-                            <label for="mail">Adresse mail :</label>
+                            <label for="mail"
+                                   class="mb-3 block text-base font-medium text-[#07074D]">Adresse
+                                mail :</label>
                             <input type="mail" name="mail"
                                    placeholder="Adresse mail" required><br><br>
-                            <label for="phone number">Numéro de téléphone
-                                :</label>
+                            <label for="phone number"
+                                   class="mb-3 block text-base font-medium text-[#07074D]">Numéro
+                                de téléphone :</label>
                             <input type="text" name="number phone"
                                    placeholder="Numéro de téléphone"
                                    maxlength="10" pattern="[0-10]{10}"
                                    requiered><br><br>
-                            <label for="code postal">Code postal :</label>
+                            <label for="code postal"
+                                   class="mb-3 block text-base font-medium text-[#07074D]">Code
+                                postal :</label>
                             <input type="text" name="code postal"
                                    placeholder="Code postal" required><br><br>
-                            <label for="ville">Ville :</label>
+                            <label for="ville"
+                                   class="mb-3 block text-base font-medium text-[#07074D]">Ville
+                                :</label>
                             <input type="text" name="ville" placeholder="Ville"
                                    required><br><br>
-                            <label for="job">Sujet :</label>
+                            <label for="job"
+                                   class="mb-3 block text-base font-medium text-[#07074D]">Sujet
+                                :</label>
                             <select name="situation" id="situation"
                                     class="border-4 bg-lin" required>
                                 <option value="Séance Nouveau-né"> Séance
@@ -125,9 +138,10 @@
                             </select><br><br>
                     </div>
                     <label for="message">Votre message :</label>
-                    <textarea name="message" id="" cols="30"
-                              rows="10"></textarea><br><br>
-                    <button type="submit" id="mybutton">Valider</button>
+                    <textarea name="message" id="" cols="30" rows="10"
+                              class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea><br><br>
+                    <button type="submit" id="mybutton"
+                            class=" bg-amber-800 hover:text-amber-800 hover:bg-white text-lin font-semibold py-3 px-8 text-base outline-none rounded shadow">Valider</button>
                     </form>
                 </section>
             </div>
