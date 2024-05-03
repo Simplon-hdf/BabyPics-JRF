@@ -83,7 +83,55 @@
                 </section>
             </div>
         </header>
-        <main></main>
+        <main>
+            <div>
+                <section>
+                    <div>
+                        <form action="https://formbold.com/s/FORM_ID"
+                              method="POST">
+                            <label for="username">Nom de famille :</label>
+                            <input type="text" name="username"
+                                   placeholder="Nom de famille"
+                                   required><br><br>
+                            <label for="Prénom">Prénom :</label>
+                            <input type="text" name="Prénom"
+                                   placeholder="Premier prénom uniquement"
+                                   required><br><br>
+                            <label for="mail">Adresse mail :</label>
+                            <input type="mail" name="mail"
+                                   placeholder="Adresse mail" required><br><br>
+                            <label for="phone number">Numéro de téléphone
+                                :</label>
+                            <input type="text" name="number phone"
+                                   placeholder="Numéro de téléphone"
+                                   maxlength="10" pattern="[0-10]{10}"
+                                   requiered><br><br>
+                            <label for="code postal">Code postal :</label>
+                            <input type="text" name="code postal"
+                                   placeholder="Code postal" required><br><br>
+                            <label for="ville">Ville :</label>
+                            <input type="text" name="ville" placeholder="Ville"
+                                   required><br><br>
+                            <label for="job">Sujet :</label>
+                            <select name="situation" id="situation"
+                                    class="border-4 bg-lin" required>
+                                <option value="Séance Nouveau-né"> Séance
+                                    Nouveau-né </option>
+                                <option value="Séance Grossesse"> Séance
+                                    Grossesse </option>
+                                <option value="Séance Grand Bébé">Séance Grand
+                                    Bébé </option>
+                                <option value="Autre">Autre</option>
+                            </select><br><br>
+                    </div>
+                    <label for="message">Votre message :</label>
+                    <textarea name="message" id="" cols="30"
+                              rows="10"></textarea><br><br>
+                    <button type="submit" id="mybutton">Valider</button>
+                    </form>
+                </section>
+            </div>
+        </main>
         <footer class="bg-lin dark:bg-black-900">
             <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div class="md:flex md:justify-around">
