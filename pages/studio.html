@@ -5,17 +5,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sarah Delacroix</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            white: '#FFFFFF',
+                            lin: '#E4DFD7',
+                        },
+                        fontFamily: {
+                            allura: ["Allura"],
+                            mulish: ["Mulish"]
+                        },
+                    }
+                }
+            }
+        </script>
         <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
                 crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+              rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
               rel="stylesheet">
     </head>
     <body>
-        <header>
-
+        <header
+                class="bg-[url('/res/baby-header.jp')] left-0 right-0 top-0 flex bg-no-repeat bg-cover md:size-auto max-h-96 shadow-md shadow-white-lg">
+            <div class="flex flex-wrap h-screen">
+                <section class="relative mx-auto">
+                    <nav
+                         class="flex justify-between bg-white-900 text-gray-500 w-screen">
+                        <div
+                             class="px-5 xl:px-12 py-6 flex w-full items-center">
+                            <a class="text-3xl font-bold font-heading"
+                               href="/index.html">
+                                <img class="h-20" src="/icon.png" alt="icon">
+                            </a>
+                            <ul
+                                class="hidden md:flex px-4 mx-auto space-x-12 font-mulish text-black font-semibold">
+                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
+                                       href="./index.html">Accueil</a></li>
+                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
+                                       href="./studio.html">Le Studio</a></li>
+                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
+                                       href="./gallery.html">Gallerie</a></li>
+                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
+                                       href="./prices.html">Tarifs</a></li>
+                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
+                                       href="./blog.html">Blog</a></li>
+                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
+                                       href="./about.html">À propos</a></li>
+                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
+                                       href="./contact.html">Contact</a></li>
+                            </ul>
+                            <a class="navbar-burger self-center mr-12 xl:hidden"
+                               href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     class="h-6 w-6 hover:text-yellow-700"
+                                     fill="none" viewBox="0 0 24 24"
+                                     stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                    <h1
+                        class="flex justify-center text-amber-950 font-semibold font-allura text-3xl">
+                        Sarah Delacroix</h1>
+                </section>
+            </div>
         </header>
         <main>
             <section>
@@ -43,8 +109,114 @@
                 </section>
             </div>
         </main>
-        <footer>
-
+        <footer class="bg-lin dark:bg-black-900">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-around">
+                    <div class="mb-6 md:mb-0">
+                        <a href="/index.html" class="flex items-center">
+                            <img src="./icon-footer.png" class="h-11 me-3"
+                                 alt="icon-footer" />
+                            <span
+                                  class="self-center text-2xl text-amber-950 font-semibold whitespace-nowrap dark:text-white font-allura">Sarah
+                                Delacroix</span>
+                        </a>
+                    </div>
+                    <section
+                             class="grid grid-cols-2 gap-8 sm:gap-5 sm:grid-cols-4 md:flex md:justify-between mb-4">
+                        <h2 class="mb-6 text-sm font-mulish text-black
+                         font-semibold uppercase"> Navigation</h2>
+                        <ul class="font-mulish text-black font-semibold">
+                            <li class="mb-1">
+                                <a href="/index.html"
+                                   class="hover:underline hover:text-amber-950">Accueil</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./pages/studio.html"
+                                   class="hover:underline hover:text-amber-950">Le
+                                    Studio</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./pages/gallery.html"
+                                   class="hover:underline hover:text-amber-950">Gallerie</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./pages/prices.html"
+                                   class="hover:underline hover:text-amber-950">Tarifs</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./pages/blog.html"
+                                   class="hover:underline hover:text-amber-950">Blog</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./pages/about.html"
+                                   class="hover:underline hover:text-amber-950">À
+                                    propos</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="./pages/contact.html"
+                                   class="hover:underline hover:text-amber-950">Contact</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2
+                            class="mb-6 text-sm font-mulish text-black font-semibold uppercase">
+                            Contact</h2>
+                        <ul class="font-mulish text-black semi-bold">
+                            <li class="mb-1">
+                                <p>Adresse : Lorem ipsum dolor sit</p>
+                            </li>
+                            <li class="mb-1">
+                                <a href="mailto:contact&#64;larum.com"
+                                   class="hover:underline hover:text-amber-950">Contactez-nous
+                                    par mail</a>
+                            </li>
+                            <li>
+                                <a href="tel:0000000000"
+                                   class="hover:underline hover:text-amber-950">Tel
+                                    00.00.00.00.00 </href=>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2
+                            class="mb-6 text-sm font-mulish text-black font-semibold uppercase">
+                            Suivez-moi</h2>
+                        <ul class="font-mulish text-black font-semibold">
+                            <li class="mb-1">
+                                <a href="https://www.instagram.com/"
+                                   class="hover:underline hover:text-amber-950">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.fr/"
+                                   class="hover:underline hover:text-amber-950">Pinterest</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/"
+                                   class="hover:underline hover:text-amber-950">Facebook</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2
+                            class="mb-6 text-sm font-mulish text-black font-semibold uppercase">
+                            À propos</h2>
+                        <ul class="font-mulish text-black font-semibold">
+                            <li class="mb-4">
+                                <a href="#"
+                                   class="hover:underline hover:text-amber-950">Mentions
+                                    légales</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div>
+                <span class="text-gray-700 sm:text-center flex justify-center">
+                    <p>© 2024 Photographe Grossesse - Naissance - Bébé </p>
+                </span>
+            </div>
         </footer>
     </body>
 </html>
