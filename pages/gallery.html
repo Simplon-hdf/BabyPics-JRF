@@ -35,76 +35,119 @@
     </head>
     <body>
         <header
-                class="bg-[url('/res/baby-header.jp')] left-0 right-0 top-0 flex bg-no-repeat bg-cover md:size-auto max-h-96 shadow-md shadow-white-lg">
-            <div class="flex flex-wrap h-screen">
-                <section class="relative mx-auto">
-                    <nav
-                         class="flex justify-between bg-white-900 text-gray-500 w-screen">
-                        <div
-                             class="px-5 xl:px-12 py-6 flex w-full items-center">
-                            <a class="text-3xl font-bold font-heading"
-                               href="/index.html">
-                                <img class="h-20" src="/icon.png" alt="icon">
-                            </a>
-                            <ul
-                                class="hidden md:flex px-4 mx-auto space-x-12 font-mulish text-black font-semibold">
-                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
-                                       href="./index.html">Accueil</a></li>
-                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
-                                       href="./studio.html">Le Studio</a></li>
-                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
-                                       href="./gallery.html">Gallerie</a></li>
-                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
-                                       href="./prices.html">Tarifs</a></li>
-                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
-                                       href="./blog.html">Blog</a></li>
-                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
-                                       href="./about.html">À propos</a></li>
-                                <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin"
-                                       href="./contact.html">Contact</a></li>
-                            </ul>
-                            <a class="navbar-burger self-center mr-12 xl:hidden"
-                               href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                     class="h-6 w-6 hover:text-yellow-700"
-                                     fill="none" viewBox="0 0 24 24"
-                                     stroke="currentColor">
-                                    <path stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          stroke-width="2"
-                                          d="M4 6h16M4 12h16M4 18h16" />
-                                </svg>
-                            </a>
-                        </div>
-                    </nav>
-                    <h1
-                        class="flex justify-center text-amber-950 font-semibold font-allura text-3xl">
-                        Sarah Delacroix</h1>
-                </section>
-            </div>
+                class="bg-[url('../res/img/mouton.png')] left-0 right-0 top-0 bg-no-repeat bg-cover shadow-md shadow-white-lg h-screen max-h-40 xl:max-h-60 fixed">
+            <nav class="flex items-center justify-between xl:hidden">
+                <figure>
+                    <a href="/index.html">
+                        <img class="max-w-32 mr-20 mt-3 px-5"
+                             src="../res/img/icon.png" alt="icon">
+                    </a>
+                </figure>
+                <label for="checkmenu"><i class="fa-solid fa-bars p-4 text-3xl"
+                       aria-hidden="true" style="color:#451a03"></i>
+                </label>
+                <input id="checkmenu" type="checkbox"
+                       class="peer/menu hidden menu peer">
+                <div
+                     class="absolute bg-lin left-full top-full w-full peer-checked/menu:left-0">
+                    <ul
+                        class="flex flex-col p-4 items-center justify-end font-mulish text-black font-semibold mr-5">
+                        <li>
+                            <a href="/index.html"
+                               class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
+                               aria-current="page">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="../pages/studio.html"
+                               class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
+                               aria-current="page">Le studio</a>
+                        </li>
+                        <li>
+                            <a href="../pages/gallery.html"
+                               class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
+                               aria-current="page">Gallerie</a>
+                        </li>
+                        <li>
+                            <a href="../pages/prices.html"
+                               class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
+                               aria-current="page">Tarifs</a>
+                        </li>
+                        <li>
+                            <a href="../pages/blog.html"
+                               class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
+                               aria-current="page">Blog</a>
+                        </li>
+                        <li>
+                            <a href="../pages/about.html"
+                               class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
+                               aria-current="page">A propos</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contact.html"
+                               class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
+                               aria-current="page">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav
+                 class="hidden px-5 py-6 flex items-center justify-between hidden xl:flex">
+                <figure>
+                    <a href="/index.html">
+                        <img class="max-w-40" src="../res/img/icon.png"
+                             alt="icon">
+                    </a>
+                </figure>
+                <ul
+                    class="hidden xl:flex space-x-12 font-mulish text-black font-semibold mr-5">
+                    <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
+                           href="/index.html">Accueil</a></li>
+                    <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
+                           href="../pages/studio.html">Le Studio</a></li>
+                    <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
+                           href="../pages/gallery.html">Gallerie</a></li>
+                    <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
+                           href="../pages/prices.html">Tarifs</a></li>
+                    <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
+                           href="../pages/blog.html">Blog</a></li>
+                    <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
+                           href="../pages/about.html">À propos</a></li>
+                    <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
+                           href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1
+                class="flex justify-center text-amber-950 font-semibold font-allura text-5xl">
+                Blog</h1>
         </header>
-        <main>
+        <main class="grid-cols-1 mt-44 xl:mt-80">
             <h2
-                class="grid justify-center text-3xl text-amber-950 font-semibold whitespace-nowrap dark:text-white font-mulish m-5">
+                class="grid items-center justify-center text-3xl text-amber-950 font-semibold whitespace-nowrap dark:text-white font-mulish m-5">
                 Grossesse</h2>
             <section
                      class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">
                 <div class="grid gap-4">
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/pregnancy/grossesse1.jpg"
                              alt="pregnant-women"></div>
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
-                             alt="pregnant-women"></div>
-                </div>
-                <div class="grid gap-4">
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
-                             alt="pregnant-women"></div>
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/pregnancy/grossesse2.jpg"
                              alt="pregnant-women"></div>
                 </div>
                 <div class="grid gap-4">
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/pregnancy/grossesse3.jpg"
                              alt="pregnant-women"></div>
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/pregnancy/grossesse4.jpg"
+                             alt="pregnant-women"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/pregnancy/grossesse5.jpg"
+                             alt="pregnant-women"></div>
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/pregnancy/grossesse6.jpg"
                              alt="pregnant-women"></div>
                 </div>
             </section>
@@ -114,22 +157,28 @@
             <section
                      class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">
                 <div class="grid gap-4">
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
-                             alt="birth-baby"></div>
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
-                             alt="birth-baby"></div>
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/birth/baby1.jpg" alt="birth-baby">
+                    </div>
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/birth/baby2.jpg" alt="birth-baby">
+                    </div>
                 </div>
                 <div class="grid gap-4">
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
-                             alt="birth-baby"></div>
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
-                             alt="birth-baby"></div>
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/birth/baby3.jpg" alt="birth-baby">
+                    </div>
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/birth/baby4.jpg" alt="birth-baby">
+                    </div>
                 </div>
                 <div class="grid gap-4">
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
-                             alt="birth-baby"></div>
-                    <div class="h-auto max-w-full rounded-lg"><img src=""
-                             alt="birth-baby"></div>
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/birth/baby5.jpg" alt="birth-baby">
+                    </div>
+                    <div class="h-auto max-w-full rounded-lg"><img
+                             src="../res/birth/baby6.jpg" alt="birth-baby">
+                    </div>
                 </div>
             </section>
             <h2
@@ -138,22 +187,22 @@
             <section
                      class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">
                 <div class="grid gap-4">
-                    <div><img class="h-auto max-w-full rounded-lg" src=""
-                             alt="baby"></div>
-                    <div><img class="h-auto max-w-full rounded-lg" src=""
-                             alt="baby"></div>
+                    <div><img class="h-auto max-w-full rounded-lg"
+                             src="../res/baby/baby1.jpg" alt="baby"></div>
+                    <div><img class="h-auto max-w-full rounded-lg"
+                             src="../res/baby/baby2.jpg" alt="baby"></div>
                 </div>
                 <div class="grid gap-4">
-                    <div><img class="h-auto max-w-full rounded-lg" src=""
-                             alt="baby"></div>
-                    <div><img class="h-auto max-w-full rounded-lg" src=""
-                             alt="baby"></div>
+                    <div><img class="h-auto max-w-full rounded-lg"
+                             src="../res/baby/baby3.jpg" alt="baby"></div>
+                    <div><img class="h-auto max-w-full rounded-lg"
+                             src="../res/baby/baby4.jpg" alt="baby"></div>
                 </div>
                 <div class="grid gap-4">
-                    <div><img class="h-auto max-w-full rounded-lg" src=""
-                             alt="baby"></div>
-                    <div><img class="h-auto max-w-full rounded-lg" src=""
-                             alt="baby"></div>
+                    <div><img class="h-auto max-w-full rounded-lg"
+                             src="../res/baby/baby5.jpg" alt="baby"></div>
+                    <div><img class="h-auto max-w-full rounded-lg"
+                             src="../res/baby/baby6.jpg" alt="baby"></div>
                 </div>
             </section>
         </main>
@@ -162,8 +211,8 @@
                 <div class="md:flex md:justify-around">
                     <div class="mb-6 md:mb-0">
                         <a href="/index.html" class="flex items-center">
-                            <img src="./icon-footer.png" class="h-11 me-3"
-                                 alt="icon-footer" />
+                            <img src="../res/img/icon-footer.png"
+                                 class="h-11 me-3" alt="icon-footer" />
                             <span
                                   class="self-center text-2xl text-amber-950 font-semibold whitespace-nowrap dark:text-white font-allura">Sarah
                                 Delacroix</span>
@@ -177,33 +226,33 @@
                             <ul class="font-mulish text-black font-semibold">
                                 <li class="mb-1">
                                     <a href="/index.html"
-                                       class="hover:underline hover:text-amber-950">Accueil</a>
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Accueil</a>
                                 </li>
                                 <li class="mb-1">
                                     <a href="./pages/studio.html"
-                                       class="hover:underline hover:text-amber-950">Le
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Le
                                         Studio</a>
                                 </li>
                                 <li class="mb-1">
                                     <a href="./pages/gallery.html"
-                                       class="hover:underline hover:text-amber-950">Gallerie</a>
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Gallerie</a>
                                 </li>
                                 <li class="mb-1">
                                     <a href="./pages/prices.html"
-                                       class="hover:underline hover:text-amber-950">Tarifs</a>
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Tarifs</a>
                                 </li>
                                 <li class="mb-1">
                                     <a href="./pages/blog.html"
-                                       class="hover:underline hover:text-amber-950">Blog</a>
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Blog</a>
                                 </li>
                                 <li class="mb-1">
                                     <a href="./pages/about.html"
-                                       class="hover:underline hover:text-amber-950">À
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">À
                                         propos</a>
                                 </li>
                                 <li class="mb-1">
                                     <a href="./pages/contact.html"
-                                       class="hover:underline hover:text-amber-950">Contact</a>
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Contact</a>
                                 </li>
                             </ul>
                         </section>
@@ -217,12 +266,12 @@
                                 </li>
                                 <li class="mb-1">
                                     <a href="mailto:contact&#64;larum.com"
-                                       class="hover:underline hover:text-amber-950">Contactez-nous
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Contactez-nous
                                         par mail</a>
                                 </li>
                                 <li>
                                     <a href="tel:0000000000"
-                                       class="hover:underline hover:text-amber-950">Tel
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Tel
                                         00.00.00.00.00 </href=>
                                     </a>
                                 </li>
@@ -235,15 +284,15 @@
                             <ul class="font-mulish text-black font-semibold">
                                 <li class="mb-1">
                                     <a href="https://www.instagram.com/"
-                                       class="hover:underline hover:text-amber-950">Instagram</a>
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Instagram</a>
                                 </li>
                                 <li>
                                     <a href="https://www.pinterest.fr/"
-                                       class="hover:underline hover:text-amber-950">Pinterest</a>
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Pinterest</a>
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/"
-                                       class="hover:underline hover:text-amber-950">Facebook</a>
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Facebook</a>
                                 </li>
                             </ul>
                         </section>
@@ -254,7 +303,7 @@
                             <ul class="font-mulish text-black font-semibold">
                                 <li class="mb-4">
                                     <a href="#"
-                                       class="hover:underline hover:text-amber-950">Mentions
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Mentions
                                         légales</a>
                                 </li>
                             </ul>
