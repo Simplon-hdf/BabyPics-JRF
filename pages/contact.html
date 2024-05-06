@@ -120,15 +120,29 @@
                 class="flex justify-center text-amber-950 font-semibold font-allura text-5xl">
                 Contact</h1>
         </header>
-        <main class="mt-44 xl:mt-60">
-            <div class="flex justify-center mt-14 text-gray-600 mx-6">
-                <h3>Je vous remercie pour l'intérêt que vous témoignez face à
-                    mon travail. Pour toute demande d'information, merci de bien
-                    vouloir compléter le formulaire ci-dessous.</h3>
-            </div><br>
-            <div class="flex items-center justify-center px-12">
-                <section class="mx-auto w-full max-w-[550px] mb-5 mt-12">
-                    <form action="https://formbold.com/s/FORM_ID" method="POST">
+        <main class="mt-44 lg:mt-0">
+            <div class="flex flex-col place-items-center xl:flex-row">
+                <div
+                     class="flex justify-center justify-items-center mt-14 flex-col text-black text-2xl font-bold md:text-2xl font-mulish text-center mb-10 mx-10">
+                    <figure class="flex justify-center mb-20"><img
+                             class="sm:w-1/3 w-1/2" src="../res/img/icon.png"
+                             alt="logo">
+                    </figure>
+                    <p
+                       class="mb-10 text-amber-800 flex items-center mx-22 xl:mx-44">
+                        Je vous remercie pour l'intérêt que vous témoignez face
+                        à mon travail. Pour toute demande d'information,
+                        n'hésitez pas à me contacter depuis l'outil de contact
+                        de votre choix </p>
+                    <a class="mb-3" href="tel:0000000000">Par Téléphone <i
+                           class="fa-solid fa-phone"></i></a>
+                    <a class="mb-3" href="mailto:contact&#64;larum.com">
+                        Contactez-moi par mail</a>
+                    <p>Ou depuis ce formulaire de contact</p>
+                </div>
+                <div class="flex flex-col w-full max-w-[800px] mb-5 mt-12">
+                    <form class="flex flex-col xl:mt-60 mr-10 place-items-center"
+                          action="https://formbold.com/s/FORM_ID" method="POST">
                         <label for="username"
                                class="mb-3 block text-base font-medium text-amber-950">Nom
                             de famille :</label>
@@ -151,16 +165,6 @@
                         <input class="w-80" type="text" name="number phone"
                                placeholder="Numéro de téléphone" maxlength="10"
                                pattern="[0-10]{10}" required><br><br>
-                        <label for="code postal"
-                               class="mb-3 block text-base font-medium text-amber-950">Code
-                            postal :</label>
-                        <input class="w-80" type="text" name="code postal"
-                               placeholder="Code postal" required><br><br>
-                        <label for="ville"
-                               class="mb-3 block text-base font-medium text-amber-950">Ville
-                            :</label>
-                        <input class="w-80" type="text" name="ville"
-                               placeholder="Ville" required><br><br>
                         <label for="job"
                                class="mb-3 block text-base font-medium text-amber-950">Sujet
                             :</label>
@@ -183,7 +187,7 @@
                                     type="submit" id="mybutton">Valider</button>
                         </div>
                     </form>
-                </section>
+                </div>
             </div>
         </main>
         <footer class="bg-lin dark:bg-black-900">
