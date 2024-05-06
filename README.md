@@ -1,26 +1,22 @@
-![GitHub contributors](https://img.shields.io/github/contributors/Simplon-hdf/structure-projet?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/Simplon-hdf/structure-projet?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/Simplon-hdf/structure-projet?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/Simplon-hdf/structure-projet?style=for-the-badge)
-![GitHub license](https://img.shields.io/github/license/Simplon-hdf/structure-projet?style=for-the-badge)
 
-<h1 align="center">Project name</h1>
+# Baby-Pics Sarah Delacroix
 
-<div align="center">
+![baby-pics](/res/img/icon.png)
 
-## Project Description
+## About the project
+For this project we have the instruction to make a website that is a Storefront for a baby's photographer.
 
-Ce dépôt est une structure permettant de démarrer un projet professionnel ou personnel. Ceci vous fera gagner un temps précieux et maximiser votre temps de travail.
 
-</div>
-
-## About The Project
 
 ### Built With
 
 - ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 - ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 - ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+- ![Static Badge](https://img.shields.io/badge/HTML-blue?style=for-the-badge&logo=HTML5)
+- ![Tailwind](https://img.shields.io/badge/Tailwindcss-blue?style=for-the-badge&logo=Tailwindcss)
+- ![GIT](https://img.shields.io/badge/GIT-blue?style=for-the-badge&logo=GIT)
+
 
 <details>
 <summary><h2>Checklist</h2></summary>
@@ -32,17 +28,17 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
   - Dossier
     - [ ] .config
     - [ ] dep
-    - [ ] doc
-    - [ ] res
+    - [X] doc
+    - [X] res
     - [ ] samples
     - [ ] tools
     - [ ] build
     - [ ] test
   - Fichier
-    - [ ] LICENCE.md
-    - [ ] README.md
+    - [] LICENCE.md
+    - [X] README.md
     - [ ] .gitattributes
-    - [ ] .gitignore
+    - [X] .gitignore
     - [ ] .gitmodules
     - [ ] .dockerignore
 
@@ -82,6 +78,9 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 </details>
 
 ## Author
+- Julien (techlead)
+- Romain
+- Féthi
 
 ## License
 
