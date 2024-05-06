@@ -121,47 +121,46 @@
                 Contact</h1>
         </header>
         <main class="mt-44 xl:mt-60">
-            <div class="flex justify-center mt-14 text-gray-600">
+            <div class="flex justify-center mt-14 text-gray-600 mx-6">
                 <h3>Je vous remercie pour l'intérêt que vous témoignez face à
                     mon travail. Pour toute demande d'information, merci de bien
                     vouloir compléter le formulaire ci-dessous.</h3>
-            </div><br><br>
+            </div><br>
             <div class="flex items-center justify-center px-12">
-                <section
-                         class="mx-auto w-full max-w-[550px] shadow-inner mb-5 mt-12 border-2">
+                <section class="mx-auto w-full max-w-[550px] mb-5 mt-12">
                     <form action="https://formbold.com/s/FORM_ID" method="POST">
                         <label for="username"
                                class="mb-3 block text-base font-medium text-amber-950">Nom
                             de famille :</label>
-                        <input type="text" name="username"
+                        <input class="w-80" type="text" name="username"
                                placeholder="Nom de famille" required><br><br>
                         <label for="Prénom"
                                class="mb-3 block text-base font-medium text-amber-950">Prénom
                             :</label>
-                        <input type="text" name="Prénom"
+                        <input class="w-80" type="text" name="Prénom"
                                placeholder="Premier prénom uniquement"
                                required><br><br>
                         <label for="mail"
                                class="mb-3 block text-base font-medium text-amber-950">Adresse
                             mail :</label>
-                        <input type="mail" name="mail"
+                        <input class="w-80" type="mail" name="mail"
                                placeholder="Adresse mail" required><br><br>
                         <label for="phone number"
                                class="mb-3 block text-base font-medium text-amber-950">Numéro
                             de téléphone :</label>
-                        <input type="text" name="number phone"
+                        <input class="w-80" type="text" name="number phone"
                                placeholder="Numéro de téléphone" maxlength="10"
                                pattern="[0-10]{10}" required><br><br>
                         <label for="code postal"
                                class="mb-3 block text-base font-medium text-amber-950">Code
                             postal :</label>
-                        <input type="text" name="code postal"
+                        <input class="w-80" type="text" name="code postal"
                                placeholder="Code postal" required><br><br>
                         <label for="ville"
                                class="mb-3 block text-base font-medium text-amber-950">Ville
                             :</label>
-                        <input type="text" name="ville" placeholder="Ville"
-                               required><br><br>
+                        <input class="w-80" type="text" name="ville"
+                               placeholder="Ville" required><br><br>
                         <label for="job"
                                class="mb-3 block text-base font-medium text-amber-950">Sujet
                             :</label>
@@ -179,8 +178,10 @@
                             message :</label>
                         <textarea name="message" id="" cols="30" rows="10"
                                   class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea><br><br>
-                        <button class=" bg-amber-800 hover:text-amber-800 hover:bg-white text-lin font-semibold py-3 px-8 text-base outline-none rounded shadow"
-                                type="submit" id="mybutton">Valider</button>
+                        <div class="flex justify-center mb-3">
+                            <button class="transition-transform hover:-translate-y-1 flex justify-center bg-lin font-mulish text-amber-950  py-3 px-8 text-base outline-none rounded shadow"
+                                    type="submit" id="mybutton">Valider</button>
+                        </div>
                     </form>
                 </section>
             </div>
