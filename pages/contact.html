@@ -148,31 +148,35 @@
                         <label for="username"
                                class="mb-3 block text-base font-medium text-amber-950">Nom
                             de famille :</label>
-                        <input class="w-80" type="text" name="username" id="username"
+                        <input class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                               type="text" name="username"
                                placeholder="Nom de famille" required><br><br>
                         <label for="Prénom"
                                class="mb-3 block text-base font-medium text-amber-950">Prénom
                             :</label>
-                        <input class="w-80" type="text" name="Prénom" id="Prénom"
+                        <input class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                               type="text" name="Prénom"
                                placeholder="Premier prénom uniquement"
                                required><br><br>
                         <label for="email"
                                class="mb-3 block text-base font-medium text-amber-950">Adresse
                             mail :</label>
-                        <input class="w-80" type="email" name="mail" id="email"
+                        <input class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                               type="mail" name="mail"
                                placeholder="Adresse mail" required><br><br>
                         <label for="phone_number"
                                class="mb-3 block text-base font-medium text-amber-950">Numéro
                             de téléphone :</label>
-                        <input class="w-80" type="text" name="number phone" id="phone_number"
+                        <input class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                               type="text" name="number phone"
                                placeholder="Numéro de téléphone" maxlength="10"
                                pattern="[0-10]{10}" required><br><br>
                         <label for="situation"
                                class="mb-3 block text-base font-medium text-amber-950">Sujet
                             :</label>
-                        <select name="situation" id="situation"
+                        <select class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                                name="situation" id="situation"
                                 class="border-4 bg-lin" required>
-                            <option value="">Choisir une option</option>    
                             <option value="Séance Nouveau-né"> Séance Nouveau-né
                             </option>
                             <option value="Séance Grossesse"> Séance Grossesse
@@ -181,13 +185,14 @@
                             </option>
                             <option value="Autre">Autre</option>
                         </select><br><br>
-                        <label for="message" class="text-amber-950">Votre
+                        <label for="message"
+                               class="mb-3 block text-base font-medium text-amber-950">Votre
                             message :</label>
-                        <textarea name="message" id="message" cols="30" rows="10"
-                                  class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea><br><br>
+                        <textarea name="message" id="" cols="30" rows="10"
+                                  class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"></textarea><br><br>
                         <div class="flex justify-center mb-3">
-                            <button class="transition-transform hover:-translate-y-1 flex justify-center bg-lin font-mulish text-amber-950  py-3 px-8 text-base outline-none rounded shadow"
-                                    type="submit" id="mybutton">Valider</button>
+                            <button class="transition-transform hover:-translate-y-1 flex justify-center bg-lin font-mulish text-amber-950 font-bold py-3 px-8 text-base outline-none shadow"
+                                    type="submit" id="mybutton">Envoyer</button>
                         </div>
                     </form>
                 </div>
@@ -259,11 +264,10 @@
                                 <li>
                                     <a href="tel:0000000000"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Tel
-                                        00.00.00.00.00
+                                        00.00.00.00.00 </href=>
                                     </a>
                                 </li>
                             </ul>
-                        </section> 
                     </div>
                     <section>
                         <h2
@@ -299,7 +303,9 @@
                 </div>
             </div>
             <div>
-                <p class="text-gray-700 sm:text-center flex justify-center">© 2024 Photographe Grossesse - Naissance - Bébé </p>
+                <span class="text-gray-700 sm:text-center flex justify-center">
+                    <p>© 2024 Photographe Grossesse - Naissance - Bébé </p>
+                </span>
             </div>
         </footer>
     </body>
