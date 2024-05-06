@@ -53,37 +53,37 @@
                     <ul
                         class="flex flex-col p-4 items-center justify-end font-mulish text-black font-semibold mr-5">
                         <li>
-                            <a href="/index.html"
+                            <a href="../index.html"
                                class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
                                aria-current="page">Accueil</a>
                         </li>
                         <li>
-                            <a href="../pages/studio.html"
+                            <a href="./studio.html"
                                class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
                                aria-current="page">Le studio</a>
                         </li>
                         <li>
-                            <a href="../pages/gallery.html"
+                            <a href="./gallery.html"
                                class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
                                aria-current="page">Gallerie</a>
                         </li>
                         <li>
-                            <a href="../pages/prices.html"
+                            <a href="./prices.html"
                                class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
                                aria-current="page">Tarifs</a>
                         </li>
                         <li>
-                            <a href="../pages/blog.html"
+                            <a href="./blog.html"
                                class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
                                aria-current="page">Blog</a>
                         </li>
                         <li>
-                            <a href="../pages/about.html"
+                            <a href="./about.html"
                                class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
                                aria-current="page">A propos</a>
                         </li>
                         <li>
-                            <a href="../pages/contact.html"
+                            <a href="./contact.html"
                                class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200"
                                aria-current="page">Contact</a>
                         </li>
@@ -93,7 +93,7 @@
             <nav
                  class="hidden px-5 py-6 flex items-center justify-between hidden xl:flex">
                 <figure>
-                    <a href="/index.html">
+                    <a href="../index.html">
                         <img class="max-w-40" src="../res/img/icon.png"
                              alt="icon">
                     </a>
@@ -101,19 +101,19 @@
                 <ul
                     class="hidden xl:flex space-x-12 font-mulish text-black font-semibold mr-5">
                     <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
-                           href="/index.html">Accueil</a></li>
+                           href="../index.html">Accueil</a></li>
                     <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
-                           href="../pages/studio.html">Le Studio</a></li>
+                           href="./studio.html">Le Studio</a></li>
                     <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
-                           href="../pages/gallery.html">Gallerie</a></li>
+                           href="./gallery.html">Gallerie</a></li>
                     <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
-                           href="../pages/prices.html">Tarifs</a></li>
+                           href="./prices.html">Tarifs</a></li>
                     <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
-                           href="../pages/blog.html">Blog</a></li>
+                           href="./blog.html">Blog</a></li>
                     <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
-                           href="../pages/about.html">À propos</a></li>
+                           href="./about.html">À propos</a></li>
                     <li><a class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-lin m-2"
-                           href="../pages/contact.html">Contact</a></li>
+                           href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
             <h1
@@ -134,10 +134,12 @@
                         à mon travail. Pour toute demande d'information,
                         n'hésitez pas à me contacter depuis l'outil de contact
                         de votre choix </p>
-                    <a class="mb-3" href="tel:0000000000">Par Téléphone <i
+                    <a class="mb-3 transition-transform hover:-translate-y-1"
+                       href="tel:0000000000">Par Téléphone <i
                            class="fa-solid fa-phone"></i></a>
-                    <a class="mb-3" href="mailto:contact&#64;larum.com">
-                        Contactez-moi par mail</a>
+                    <a class="mb-3 transition-transform hover:-translate-y-1"
+                       href="mailto:contact&#64;larum.com"> Contactez-moi par
+                        mail</a>
                     <p>Ou depuis ce formulaire de contact</p>
                 </div>
                 <div class="flex flex-col w-full max-w-[800px] mb-5 mt-12">
@@ -146,31 +148,35 @@
                         <label for="username"
                                class="mb-3 block text-base font-medium text-amber-950">Nom
                             de famille :</label>
-                        <input class="w-80" type="text" name="username" id="username"
+                        <input class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                               type="text" name="username"
                                placeholder="Nom de famille" required><br><br>
                         <label for="Prénom"
                                class="mb-3 block text-base font-medium text-amber-950">Prénom
                             :</label>
-                        <input class="w-80" type="text" name="Prénom" id="Prénom"
+                        <input class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                               type="text" name="Prénom"
                                placeholder="Premier prénom uniquement"
                                required><br><br>
                         <label for="email"
                                class="mb-3 block text-base font-medium text-amber-950">Adresse
                             mail :</label>
-                        <input class="w-80" type="email" name="mail" id="email"
+                        <input class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                               type="mail" name="mail"
                                placeholder="Adresse mail" required><br><br>
                         <label for="phone_number"
                                class="mb-3 block text-base font-medium text-amber-950">Numéro
                             de téléphone :</label>
-                        <input class="w-80" type="text" name="number phone" id="phone_number"
+                        <input class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                               type="text" name="number phone"
                                placeholder="Numéro de téléphone" maxlength="10"
                                pattern="[0-10]{10}" required><br><br>
                         <label for="situation"
                                class="mb-3 block text-base font-medium text-amber-950">Sujet
                             :</label>
-                        <select name="situation" id="situation"
+                        <select class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"
+                                name="situation" id="situation"
                                 class="border-4 bg-lin" required>
-                            <option value="">Choisir une option</option>    
                             <option value="Séance Nouveau-né"> Séance Nouveau-né
                             </option>
                             <option value="Séance Grossesse"> Séance Grossesse
@@ -179,13 +185,14 @@
                             </option>
                             <option value="Autre">Autre</option>
                         </select><br><br>
-                        <label for="message" class="text-amber-950">Votre
+                        <label for="message"
+                               class="mb-3 block text-base font-medium text-amber-950">Votre
                             message :</label>
-                        <textarea name="message" id="message" cols="30" rows="10"
-                                  class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea><br><br>
+                        <textarea name="message" id="" cols="30" rows="10"
+                                  class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-amber-950 focus:shadow-md"></textarea><br><br>
                         <div class="flex justify-center mb-3">
-                            <button class="transition-transform hover:-translate-y-1 flex justify-center bg-lin font-mulish text-amber-950  py-3 px-8 text-base outline-none rounded shadow"
-                                    type="submit" id="mybutton">Valider</button>
+                            <button class="transition-transform hover:-translate-y-1 flex justify-center bg-lin font-mulish text-amber-950 font-bold py-3 px-8 text-base outline-none shadow"
+                                    type="submit" id="mybutton">Envoyer</button>
                         </div>
                     </form>
                 </div>
@@ -210,33 +217,33 @@
                          font-semibold uppercase"> Navigation</h2>
                             <ul class="font-mulish text-black font-semibold">
                                 <li class="mb-1">
-                                    <a href="/index.html"
+                                    <a href="../index.html"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Accueil</a>
                                 </li>
                                 <li class="mb-1">
-                                    <a href="./pages/studio.html"
+                                    <a href="./studio.html"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Le
                                         Studio</a>
                                 </li>
                                 <li class="mb-1">
-                                    <a href="./pages/gallery.html"
+                                    <a href="./gallery.html"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Gallerie</a>
                                 </li>
                                 <li class="mb-1">
-                                    <a href="./pages/prices.html"
+                                    <a href="./prices.html"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Tarifs</a>
                                 </li>
                                 <li class="mb-1">
-                                    <a href="./pages/blog.html"
+                                    <a href="./blog.html"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Blog</a>
                                 </li>
                                 <li class="mb-1">
-                                    <a href="./pages/about.html"
+                                    <a href="./about.html"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">À
                                         propos</a>
                                 </li>
                                 <li class="mb-1">
-                                    <a href="./pages/contact.html"
+                                    <a href="./contact.html"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Contact</a>
                                 </li>
                             </ul>
@@ -257,47 +264,47 @@
                                 <li>
                                     <a href="tel:0000000000"
                                        class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Tel
-                                        00.00.00.00.00
-                                    </a>
+                                        00.00.00.00.00 </a>
                                 </li>
                             </ul>
-                        </section> 
+                        </section>
+                        <section>
+                            <h2
+                                class="mb-6 text-sm font-mulish text-black font-semibold uppercase">
+                                Suivez-moi</h2>
+                            <ul class="font-mulish text-black font-semibold">
+                                <li class="mb-1">
+                                    <a href="https://www.instagram.com/"
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.pinterest.fr/"
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Pinterest</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/"
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Facebook</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2
+                                class="mb-6 text-sm font-mulish text-black font-semibold uppercase">
+                                À propos</h2>
+                            <ul class="font-mulish text-black font-semibold">
+                                <li class="mb-4">
+                                    <a href="#"
+                                       class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Mentions
+                                        légales</a>
+                                </li>
+                            </ul>
+                        </section>
                     </div>
-                    <section>
-                        <h2
-                            class="mb-6 text-sm font-mulish text-black font-semibold uppercase">
-                            Suivez-moi</h2>
-                        <ul class="font-mulish text-black font-semibold">
-                            <li class="mb-1">
-                                <a href="https://www.instagram.com/"
-                                   class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Instagram</a>
-                            </li>
-                            <li>
-                                <a href="https://www.pinterest.fr/"
-                                   class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Pinterest</a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/"
-                                   class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Facebook</a>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h2
-                            class="mb-6 text-sm font-mulish text-black font-semibold uppercase">
-                            À propos</h2>
-                        <ul class="font-mulish text-black font-semibold">
-                            <li class="mb-4">
-                                <a href="#"
-                                   class="hover-bar hover:text-amber-950 hover:border-b-2 hover:border-gray-200">Mentions
-                                    légales</a>
-                            </li>
-                        </ul>
-                    </section>
                 </div>
-            </div>
-            <div>
-                <p class="text-gray-700 sm:text-center flex justify-center">© 2024 Photographe Grossesse - Naissance - Bébé </p>
+                <div>
+                    <p class="text-gray-700 sm:text-center flex justify-center">
+                        © 2024 Photographe Grossesse - Naissance - Bébé </p>
+                </div>
             </div>
         </footer>
     </body>
